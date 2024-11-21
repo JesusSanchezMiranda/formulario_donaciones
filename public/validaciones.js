@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Validación del teléfono
     const phone = document.getElementById("cellphone").value.trim();
-    const phonePattern = /^\d{9}$/;
+    const phonePattern = /^9\d{8}$/;
     if (!phonePattern.test(phone)) {
-      showError("cellphoneError", "El teléfono debe tener 9 dígitos.");
+      showError("cellphoneError", "El teléfono debe comenzar con 9 y tener 9 dígitos.");
       isValid = false;
     } else {
       hideError("cellphoneError");
