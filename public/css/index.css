@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content_general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)), url(/img/donacion-de-dinero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffffc4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.container_formulario h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0f8bc1;
+}
+
+.container_formulario h3 {
+    font-size: 18px;
+    color: #0f8bc1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #020e15;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #07334e;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.412);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #07334e;
+    outline: none;
+}
+
+.amount-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.amount-button {
+    background-color: #076e9a;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-button:hover {
+    background-color: #07334e;
+}
+
+.amount-button:focus {
+    outline: none;
+}
+
+
+.amount-button.selected {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #076e9a;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #07334e;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+option{
+    width: 50%;
+}
+
+/* Alineación de campos de tarjeta en dos por fila */
+.card-info-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.card-info-row .form-group {
+    flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .card-info-row {
+        flex-direction: column;
+    }
+}
