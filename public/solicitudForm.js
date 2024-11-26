@@ -29,14 +29,4 @@ function enviarFormulario() {
           confirmButtonColor: "#0f8bc1",
         });
       })
-      .catch((error) => {
-        Swal.fire({
-          title: "Error",
-          text: "Hubo un problema al procesar tu donación. Por favor, inténtalo nuevamente.",
-          icon: "error",
-          confirmButtonText: "Aceptar",
-          confirmButtonColor: "#FF0000",
-        });
-        console.error("Error:", error);
-      });
   }
